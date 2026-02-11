@@ -1,0 +1,60 @@
+###Read all users
+GET http://localhost:4000/user-api/users
+
+###
+GET http://localhost:4000/user-api/users/697dbcc2ded1eb5fae684cc4
+
+###Create user
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username": "chethana",
+    "password": "chethana",
+    "age": 20
+}
+
+###Update user by objId
+PUT http://localhost:4000/user-api/users/697e12816952026993e499ea
+Content-Type: application/json
+
+{
+"username": "cheth",
+"password": "cheth",
+"age": 19
+}
+
+###Delete user by objId
+DELETE http://localhost:4000/user-api/users/697dd770cee99c632504200e
+
+
+
+
+
+###For Products
+
+###get all products
+GET http://localhost:4000/product-api/products
+
+###create product
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "pid": 200,
+    "productName": "Laptop",
+    "price": 63830
+}
+
+###get product by objIId
+GET http://localhost:4000/product-api/products/697e154501294b82a25f8945
+
+###update product by objId
+PUT http://localhost:4000/product-api/products/697dcf0e9149ec8a0dc65733
+Content-Type: application/json
+
+{
+    "pid": 10,
+    "productName": "Wireless Mouse",
+    "price": 1550
+}
